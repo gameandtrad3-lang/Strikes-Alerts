@@ -318,9 +318,9 @@ function Ticker() {
 function StatCard({ label, value, sub, color = "var(--accent)", delay = 0 }) {
   return (
     <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderTop: `2px solid ${color}`, borderRadius: 6, padding: "16px 20px", flex: 1, minWidth: 150, animation: `fadeUp 0.5s ease both`, animationDelay: `${delay}ms` }}>
-      <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1, marginBottom: 8 }}>{label}</div>
-      <div style={{ fontFamily: "var(--font-mono)", fontSize: 24, fontWeight: 700, color, lineHeight: 1 }}>{value}</div>
-      {sub && <div style={{ fontFamily: "var(--font-sans)", fontSize: 11, color: "var(--text2)", marginTop: 5 }}>{sub}</div>}
+      <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--muted)", letterSpacing: 1, marginBottom: 8 }}>{label}</div>
+      <div style={{ fontFamily: "var(--font-mono)", fontSize: 28, fontWeight: 700, color, lineHeight: 1 }}>{value}</div>
+      {sub && <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text2)", marginTop: 5 }}>{sub}</div>}
     </div>
   );
 }
@@ -329,7 +329,7 @@ function SectionHeader({ children, accent = "var(--accent)" }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
       <div style={{ width: 3, height: 18, background: accent, borderRadius: 2, flexShrink: 0 }} />
-      <h2 style={{ fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "var(--text2)" }}>{children}</h2>
+      <h2 style={{ fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "var(--text2)" }}>{children}</h2>
     </div>
   );
 }
@@ -340,8 +340,8 @@ function StrikeCard({ s, idx, onClick, selected }) {
     <div onClick={() => onClick(s)} style={{ background: selected ? "var(--panel2)" : "var(--panel)", border: `1px solid ${selected ? borderColor : "var(--border)"}`, borderLeft: `3px solid ${borderColor}`, borderRadius: 6, padding: "16px 18px", cursor: "pointer", animation: `fadeUp 0.45s ease both`, animationDelay: `${idx * 60}ms`, transition: "background 0.15s", boxShadow: selected ? `0 0 24px ${borderColor}22` : "none" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 10 }}>
         <div>
-          <div style={{ fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, color: "var(--text)", marginBottom: 4 }}>{s.hospital}</div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text2)" }}>{s.city}, {s.state} · {s.union}</div>
+          <div style={{ fontFamily: "var(--font-sans)", fontSize: 17, fontWeight: 700, color: "var(--text)", marginBottom: 4 }}>{s.hospital}</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text2)" }}>{s.city}, {s.state} · {s.union}</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 5, flexShrink: 0 }}>
           <StatusBadge status={s.status} />
@@ -349,11 +349,11 @@ function StrikeCard({ s, idx, onClick, selected }) {
         </div>
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 10 }}>
-        <span style={{ fontFamily: "var(--font-mono)", fontSize: 11 }}><span style={{ color: "var(--muted)" }}>RNs </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.nurses.toLocaleString()}</span></span>
-        <span style={{ fontFamily: "var(--font-mono)", fontSize: 11 }}><span style={{ color: "var(--muted)" }}>Sites </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.hospitals}</span></span>
-        <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: borderColor }}>{s.date}</span>
+        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13 }}><span style={{ color: "var(--muted)" }}>RNs </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.nurses.toLocaleString()}</span></span>
+        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13 }}><span style={{ color: "var(--muted)" }}>Sites </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.hospitals}</span></span>
+        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: borderColor }}>{s.date}</span>
       </div>
-      <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--text2)", lineHeight: 1.6 }}>{s.notes}</div>
+      <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text2)", lineHeight: 1.6 }}>{s.notes}</div>
       {selected && (
         <div style={{ marginTop: 14, paddingTop: 14, borderTop: "1px solid var(--border)" }}>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1, marginBottom: 8 }}>KEY ISSUES</div>
@@ -534,8 +534,8 @@ export default function App() {
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 34, height: 34, borderRadius: 6, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0 }}>⚕</div>
             <div>
-              <div style={{ fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 800, color: "var(--text)", letterSpacing: 0.5, lineHeight: 1 }}>Strikes<span style={{ color: "var(--accent)" }}>Alerts</span></div>
-              <div style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--muted)", letterSpacing: 1.5 }}>HEALTHCARE LABOR INTELLIGENCE</div>
+              <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, fontWeight: 800, color: "var(--text)", letterSpacing: 0.5, lineHeight: 1 }}>Strikes<span style={{ color: "var(--accent)" }}>Alerts</span></div>
+              <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1.5 }}>HEALTHCARE LABOR INTELLIGENCE</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -564,11 +564,11 @@ export default function App() {
         </div>
 
         {/* TABS */}
-        <div style={{ display: "flex", padding: "0 24px", background: "var(--surface)", borderBottom: "1px solid var(--border)", overflowX: "auto" }}>
+        <div style={{ display: "flex", padding: "12px 24px", gap: 8, background: "var(--surface)", borderBottom: "1px solid var(--border)", overflowX: "auto" }}>
           {TABS.map(t => (
-            <button key={t.id} onClick={() => setTab(t.id)} style={{ background: "none", border: "none", cursor: "pointer", padding: "14px 16px", display: "flex", alignItems: "center", gap: 6, fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 600, color: tab === t.id ? "#fff" : "var(--muted)", borderBottom: `2px solid ${tab === t.id ? "var(--accent)" : "transparent"}`, transition: "color 0.15s", whiteSpace: "nowrap" }}>
+            <button key={t.id} onClick={() => setTab(t.id)} style={{ background: tab === t.id ? "var(--accent)" : "#ffffff", border: `1.5px solid ${tab === t.id ? "var(--accent)" : "#d1d5db"}`, borderRadius: 8, cursor: "pointer", padding: "9px 18px", display: "flex", alignItems: "center", gap: 7, fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: tab === t.id ? 700 : 500, color: tab === t.id ? "#ffffff" : "#374151", transition: "all 0.15s", whiteSpace: "nowrap", boxShadow: tab === t.id ? "0 2px 8px rgba(0,119,170,0.2)" : "none" }}>
               {t.label}
-              {t.count !== null && <span style={{ background: tab === t.id ? "var(--accent-dim)" : "rgba(255,255,255,0.05)", color: tab === t.id ? "var(--accent)" : "var(--muted)", borderRadius: 10, padding: "1px 7px", fontFamily: "var(--font-mono)", fontSize: 10, fontWeight: 700 }}>{t.count}</span>}
+              {t.count !== null && <span style={{ background: tab === t.id ? "rgba(255,255,255,0.25)" : "#f3f4f6", color: tab === t.id ? "#ffffff" : "#6b7280", borderRadius: 20, padding: "1px 8px", fontFamily: "var(--font-sans)", fontSize: 12, fontWeight: 700 }}>{t.count}</span>}
             </button>
           ))}
         </div>
