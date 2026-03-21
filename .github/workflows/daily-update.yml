@@ -1,0 +1,27 @@
+name: Daily Strike Intelligence Update
+on:
+  schedule:
+    - cron: '0 11 * * *'
+  workflow_dispatch:
+jobs:
+  update-intel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install deps
+        run: npm install node-fetch
+      - name: Run scan
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/scan.js
+      - name: Commit if changed
+        run: |
+          git diff --exit-code src/data.js || (git config user.name 'Bot' && git config user.email 'bot@strikesalerts.com' && git add src/data.js && git commit -m 'Daily update' && git push)
+          
