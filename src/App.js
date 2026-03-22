@@ -335,9 +335,14 @@ function SectionHeader({ children, accent = "var(--accent)" }) {
 }
 
 function StrikeCard({ s, idx, onClick, selected }) {
-  const borderColor = { red: "var(--red)", orange: "var(--orange)", yellow: "var(--yellow)" }[s.color] || "var(--border2)";
+  const statusColor = {
+    "ACTIVE STRIKE": "var(--green)",
+    "AUTHORIZED":    "var(--red)",
+    "VOTE PENDING":  "var(--orange)",
+    "WATCH":         "var(--yellow)",
+  }[s.status] || "var(--border2)";
   return (
-    <div onClick={() => onClick(s)} style={{ background: selected ? "var(--panel2)" : "var(--panel)", border: `1px solid ${selected ? borderColor : "var(--border)"}`, borderLeft: `3px solid ${borderColor}`, borderRadius: 6, padding: "16px 18px", cursor: "pointer", animation: `fadeUp 0.45s ease both`, animationDelay: `${idx * 60}ms`, transition: "background 0.15s", boxShadow: selected ? `0 0 24px ${borderColor}22` : "none" }}>
+    <div onClick={() => onClick(s)} style={{ background: selected ? "var(--panel2)" : "var(--surface)", border: `1px solid ${selected ? statusColor : "var(--border)"}`, borderLeft: `6px solid ${statusColor}`, borderRadius: 8, padding: "16px 18px", cursor: "pointer", animation: `fadeUp 0.45s ease both`, animationDelay: `${idx * 60}ms`, transition: "all 0.15s", boxShadow: selected ? `0 2px 12px ${statusColor}22` : "0 1px 3px rgba(0,0,0,0.04)" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 10 }}>
         <div>
           <div style={{ fontFamily: "var(--font-sans)", fontSize: 17, fontWeight: 700, color: "var(--text)", marginBottom: 4 }}>{s.hospital}</div>
@@ -351,7 +356,7 @@ function StrikeCard({ s, idx, onClick, selected }) {
       <div style={{ display: "flex", flexWrap: "wrap", gap: 16, marginBottom: 10 }}>
         <span style={{ fontFamily: "var(--font-mono)", fontSize: 13 }}><span style={{ color: "var(--muted)" }}>RNs </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.nurses.toLocaleString()}</span></span>
         <span style={{ fontFamily: "var(--font-mono)", fontSize: 13 }}><span style={{ color: "var(--muted)" }}>Sites </span><span style={{ color: "var(--accent)", fontWeight: 700 }}>{s.hospitals}</span></span>
-        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: borderColor }}>{s.date}</span>
+        <span style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: statusColor, fontWeight: 600 }}>{s.date}</span>
       </div>
       <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text2)", lineHeight: 1.6 }}>{s.notes}</div>
       {selected && (
