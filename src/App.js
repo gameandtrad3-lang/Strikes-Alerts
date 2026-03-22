@@ -93,7 +93,7 @@ const STRIKES = [
     hospital: "Henry Ford Genesys Hospital",
     city: "Grand Blanc", state: "MI",
     union: "Teamsters Local 332",
-    nurses: 400, hospitals: 1,
+    nurses: 750, hospitals: 1,
     status: "ACTIVE STRIKE", risk: "ACTIVE",
     date: "~Day 200  ongoing",
     issues: ["Wages", "Staffing ratios"],
@@ -109,7 +109,7 @@ const STRIKES = [
     status: "ACTIVE STRIKE", risk: "ACTIVE",
     date: "CNA sympathy: Mar 18 (24-hr)",
     issues: ["AI in clinical practice", "Safe staffing", "Wages"],
-    notes: "2,400 NUHW therapists on strike. 23,000 CNA nurses joined sympathy strike Mar 18.",
+    notes: "2,400 NUHW therapists/clinicians on strike. 23,000 CNA nurses joined 24-hr sympathy strike Mar 18.",
     updated: "Mar 21, 2026", color: "yellow",
   },
   {
