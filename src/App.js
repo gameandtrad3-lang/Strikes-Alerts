@@ -55,6 +55,10 @@ const globalStyles = `
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
 `;
 
 // ── DATA ──────────────────────────────────────────────────────────────────────
@@ -219,6 +223,29 @@ const INSIGHTS = [
   { icon: "🤖", title: "AI Clauses Are Now Standard Bargaining Demands", body: "Every major 2026 contract now includes language blocking AI from replacing clinical judgment. This structural conflict will drive more disputes as hospital AI adoption accelerates.", color: "var(--yellow)" },
   { icon: "📋", title: "First Contracts = Highest Escalation Risk", body: "Corewell and BMC South are first-contract disputes — historically the most contentious type. These escalate faster and resolve slower than renewals.", color: "var(--orange)" },
 ];
+
+// ── TRAVEL CONTRACTS DATA ─────────────────────────────────────────────────────
+
+const TRAVEL_CONTRACTS = [
+  { id: 1, hospital: "Mayo Clinic", city: "Rochester", state: "MN", specialty: "ICU", shift: "Days/Nights", pay_hr: "$82/hr", pay_wk: "$4,920/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: true, notes: "Level 1 trauma center. CCRN preferred. Housing stipend included." },
+  { id: 2, hospital: "Cedars-Sinai Medical Center", city: "Los Angeles", state: "CA", specialty: "OR / Surgical", shift: "Days", pay_hr: "$95/hr", pay_wk: "$5,700/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "Fastaff", hot: true, notes: "High-volume surgical center. CNOR preferred. Immediate interviews." },
+  { id: 3, hospital: "Johns Hopkins Hospital", city: "Baltimore", state: "MD", specialty: "ER / ED", shift: "Nights", pay_hr: "$88/hr", pay_wk: "$5,280/wk", start: "Apr 21, 2026", duration: "13 weeks", agency: "Cross Country Nurses", hot: false, notes: "Trauma I center. Minimum 2 years ER experience required." },
+  { id: 4, hospital: "UCSF Medical Center", city: "San Francisco", state: "CA", specialty: "L&D / OB", shift: "Nights", pay_hr: "$91/hr", pay_wk: "$5,460/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Vivian Health", hot: true, notes: "High-risk OB unit. Fetal monitoring cert required." },
+  { id: 5, hospital: "Cleveland Clinic", city: "Cleveland", state: "OH", specialty: "Cath Lab", shift: "Days", pay_hr: "$98/hr", pay_wk: "$5,880/wk", start: "May 5, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: false, notes: "One of top cardiac centers in the US. RCIS preferred." },
+  { id: 6, hospital: "Mass General Hospital", city: "Boston", state: "MA", specialty: "Telemetry", shift: "Nights", pay_hr: "$79/hr", pay_wk: "$4,740/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "USNursing", hot: false, notes: "Academic medical center. Strong team support and mentorship." },
+  { id: 7, hospital: "Houston Methodist", city: "Houston", state: "TX", specialty: "NICU", shift: "Nights", pay_hr: "$86/hr", pay_wk: "$5,160/wk", start: "Apr 28, 2026", duration: "13 weeks", agency: "White Glove", hot: true, notes: "Level IV NICU. NRP required. 18+ months NICU experience." },
+  { id: 8, hospital: "Tampa General Hospital", city: "Tampa", state: "FL", specialty: "Med-Surg", shift: "Days/Nights", pay_hr: "$72/hr", pay_wk: "$4,320/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Fastaff", hot: false, notes: "High nurse-to-patient ratio. Great for new travelers." },
+  { id: 9, hospital: "NewYork-Presbyterian", city: "New York", state: "NY", specialty: "Psych / Behavioral Health", shift: "Nights", pay_hr: "$94/hr", pay_wk: "$5,640/wk", start: "May 12, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: true, notes: "Inpatient psych unit. BLS + de-escalation training required." },
+  { id: 10, hospital: "Vanderbilt University Medical Center", city: "Nashville", state: "TN", specialty: "Stepdown / PCU", shift: "Nights", pay_hr: "$76/hr", pay_wk: "$4,560/wk", start: "Apr 21, 2026", duration: "13 weeks", agency: "Cross Country Nurses", hot: false, notes: "Magnet hospital. PCU experience 1+ year preferred." },
+  { id: 11, hospital: "University of Washington Medical Center", city: "Seattle", state: "WA", specialty: "Interventional Radiology", shift: "Days", pay_hr: "$102/hr", pay_wk: "$6,120/wk", start: "May 5, 2026", duration: "13 weeks", agency: "Vivian Health", hot: true, notes: "Top-tier IR department. ARRT preferred. High pay market." },
+  { id: 12, hospital: "Emory University Hospital", city: "Atlanta", state: "GA", specialty: "GI", shift: "Days", pay_hr: "$78/hr", pay_wk: "$4,680/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "USNursing", hot: false, notes: "High-volume GI lab. Endoscopy experience required." },
+  { id: 13, hospital: "Stanford Health Care", city: "Palo Alto", state: "CA", specialty: "Radiology", shift: "Days", pay_hr: "$89/hr", pay_wk: "$5,340/wk", start: "Apr 28, 2026", duration: "13 weeks", agency: "Fastaff", hot: false, notes: "Leading research hospital. ARRT required." },
+  { id: 14, hospital: "Northwestern Memorial", city: "Chicago", state: "IL", specialty: "ICU", shift: "Nights", pay_hr: "$85/hr", pay_wk: "$5,100/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: false, notes: "Magnet designation. CCRN preferred. 2yr ICU min." },
+  { id: 15, hospital: "OHSU Hospital", city: "Portland", state: "OR", specialty: "ER / ED", shift: "Days/Nights", pay_hr: "$90/hr", pay_wk: "$5,400/wk", start: "May 5, 2026", duration: "13 weeks", agency: "White Glove", hot: true, notes: "Level 1 trauma center. Active union contract ongoing." },
+];
+
+const ALL_SPECIALTIES = ["All Specialties", "ICU", "ER / ED", "L&D / OB", "OR / Surgical", "Med-Surg", "Psych / Behavioral Health", "NICU", "Telemetry", "Stepdown / PCU", "Home Health", "Interventional Radiology", "Cath Lab", "GI", "Radiology"];
+const ALL_STATES = ["All States", "CA", "FL", "GA", "IL", "MA", "MD", "MN", "NY", "OH", "OR", "TN", "TX", "WA"];
 
 // ── PRICING DATA ──────────────────────────────────────────────────────────────
 
@@ -505,9 +532,145 @@ function PricingPage() {
   );
 }
 
+// ── TRAVEL CONTRACTS PAGE ─────────────────────────────────────────────────────
+
+function TravelContractsPage() {
+  const [specialty, setSpecialty] = useState("All Specialties");
+  const [state, setState] = useState("All States");
+
+  const filtered = TRAVEL_CONTRACTS.filter(c => {
+    const matchSpec  = specialty === "All Specialties" || c.specialty === specialty;
+    const matchState = state    === "All States"       || c.state    === state;
+    return matchSpec && matchState;
+  });
+
+  const D = {
+    bg:      "#f4f7fb",
+    surface: "#ffffff",
+    panel:   "#f8fafc",
+    border:  "#e2e8f0",
+    accent:  "#0077aa",
+    green:   "#22a855",
+    red:     "#e53e5a",
+    yellow:  "#d97706",
+    text:    "#0d1829",
+    text2:   "#4a6080",
+    muted:   "#94aabf",
+  };
+
+  const selStyle = {
+    background: D.panel, color: D.text,
+    border: `1px solid ${D.border}`, borderRadius: 8,
+    padding: "9px 14px", fontFamily: "var(--font-sans)",
+    fontSize: 14, fontWeight: 500, cursor: "pointer",
+    outline: "none", minWidth: 180,
+  };
+
+  return (
+    <div style={{ minHeight: "100vh", background: D.bg, color: D.text, fontFamily: "var(--font-sans)", animation: "slideIn 0.3s ease" }}>
+
+      {/* Dark header */}
+      <div style={{ background: D.surface, borderBottom: `1px solid ${D.border}`, padding: "16px 24px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div style={{ fontSize: 11, fontWeight: 600, color: D.muted, letterSpacing: 2, marginBottom: 6 }}>TRAVEL CONTRACTS</div>
+          <div style={{ fontSize: 22, fontWeight: 800, color: D.text, marginBottom: 4 }}>
+            🏥 Travel Nurse Contract Assignments
+          </div>
+          <div style={{ fontSize: 13, color: D.text2 }}>
+            Latest travel nurse openings by state, specialty & hospital — updated daily
+          </div>
+        </div>
+      </div>
+
+      {/* Filters */}
+      <div style={{ background: D.surface, borderBottom: `1px solid ${D.border}`, padding: "14px 24px" }}>
+        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+          <span style={{ fontSize: 13, color: D.muted, fontWeight: 500 }}>Filter by:</span>
+          <select value={specialty} onChange={e => setSpecialty(e.target.value)} style={selStyle}>
+            {ALL_SPECIALTIES.map(s => <option key={s} value={s}>{s}</option>)}
+          </select>
+          <select value={state} onChange={e => setState(e.target.value)} style={selStyle}>
+            {ALL_STATES.map(s => <option key={s} value={s}>{s}</option>)}
+          </select>
+          {(specialty !== "All Specialties" || state !== "All States") && (
+            <button onClick={() => { setSpecialty("All Specialties"); setState("All States"); }}
+              style={{ background: "transparent", border: `1px solid ${D.border}`, color: D.text2, borderRadius: 8, padding: "9px 14px", fontFamily: "var(--font-sans)", fontSize: 13, cursor: "pointer" }}>
+              Clear filters
+            </button>
+          )}
+          <span style={{ marginLeft: "auto", fontSize: 13, color: D.muted }}>
+            {filtered.length} contract{filtered.length !== 1 ? "s" : ""} found
+          </span>
+        </div>
+      </div>
+
+      {/* Contract cards */}
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "24px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(340px, 1fr))", gap: 14 }}>
+          {filtered.map((c, i) => (
+            <div key={c.id} style={{ background: D.surface, border: `1px solid ${c.hot ? D.accent : D.border}`, borderTop: `3px solid ${c.hot ? D.accent : D.border}`, borderRadius: 10, padding: "18px 20px", animation: `fadeUp 0.4s ease both`, animationDelay: `${i * 50}ms`, position: "relative", overflow: "hidden" }}>
+              {c.hot && (
+                <div style={{ position: "absolute", top: 0, right: 0, background: D.accent, color: "#000", fontSize: 9, fontWeight: 800, letterSpacing: 1, padding: "3px 10px", borderBottomLeftRadius: 8 }}>
+                  ⚡ HOT
+                </div>
+              )}
+              {/* Hospital */}
+              <div style={{ fontSize: 16, fontWeight: 700, color: D.text, marginBottom: 3 }}>{c.hospital}</div>
+              <div style={{ fontSize: 12, color: D.text2, marginBottom: 12 }}>{c.city}, {c.state}</div>
+
+              {/* Specialty & shift */}
+              <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
+                <span style={{ background: "rgba(0,229,255,0.1)", color: D.accent, border: `1px solid rgba(0,229,255,0.2)`, borderRadius: 20, padding: "3px 10px", fontSize: 11, fontWeight: 700 }}>{c.specialty}</span>
+                <span style={{ background: D.panel, color: D.text2, border: `1px solid ${D.border}`, borderRadius: 20, padding: "3px 10px", fontSize: 11, fontWeight: 500 }}>{c.shift}</span>
+                <span style={{ background: D.panel, color: D.text2, border: `1px solid ${D.border}`, borderRadius: 20, padding: "3px 10px", fontSize: 11, fontWeight: 500 }}>{c.duration}</span>
+              </div>
+
+              {/* Pay */}
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 12 }}>
+                <div style={{ background: D.panel, borderRadius: 8, padding: "10px 12px" }}>
+                  <div style={{ fontSize: 9, color: D.muted, letterSpacing: 1, marginBottom: 4 }}>HOURLY</div>
+                  <div style={{ fontSize: 18, fontWeight: 700, color: D.green }}>{c.pay_hr}</div>
+                </div>
+                <div style={{ background: D.panel, borderRadius: 8, padding: "10px 12px" }}>
+                  <div style={{ fontSize: 9, color: D.muted, letterSpacing: 1, marginBottom: 4 }}>WEEKLY EST.</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: D.green }}>{c.pay_wk}</div>
+                </div>
+              </div>
+
+              {/* Start date & agency */}
+              <div style={{ fontSize: 12, color: D.text2, marginBottom: 8, lineHeight: 1.7 }}>
+                <span style={{ color: D.muted }}>Start: </span><span style={{ color: D.yellow, fontWeight: 600 }}>{c.start}</span>
+                <br/>
+                <span style={{ color: D.muted }}>Agency: </span>{c.agency}
+              </div>
+
+              {/* Notes */}
+              <div style={{ fontSize: 12, color: D.text2, lineHeight: 1.6, marginBottom: 14, padding: "8px 10px", background: D.panel, borderRadius: 6 }}>{c.notes}</div>
+
+              {/* Apply button */}
+              <button style={{ width: "100%", padding: "10px", background: c.hot ? D.accent : "transparent", border: `1px solid ${c.hot ? D.accent : D.border}`, color: c.hot ? "#000" : D.text, borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
+                {c.hot ? "⚡ Apply Now" : "View & Apply"}
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {filtered.length === 0 && (
+          <div style={{ textAlign: "center", padding: "60px 20px", color: D.muted }}>
+            <div style={{ fontSize: 40, marginBottom: 12 }}>🔍</div>
+            <div style={{ fontSize: 18, fontWeight: 600, color: D.text2, marginBottom: 6 }}>No contracts found</div>
+            <div style={{ fontSize: 14 }}>Try adjusting your filters</div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // ── MAIN APP ──────────────────────────────────────────────────────────────────
 
 export default function App() {
+  const [mode, setMode] = useState("strikes"); // "strikes" | "contracts"
   const [tab, setTab] = useState("strikes");
   const [selected, setSelected] = useState(null);
   const [filter, setFilter] = useState("ALL");
@@ -533,6 +696,22 @@ export default function App() {
     <>
       <style>{globalStyles}</style>
       <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+
+        {/* MODE SWITCHER */}
+        <div style={{ background: "#ffffff", padding: "12px 24px", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderBottom: "1px solid var(--border)", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+          <button onClick={() => setMode("strikes")} style={{ display: "flex", alignItems: "center", gap: 8, padding: "11px 28px", borderRadius: 10, fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: `2px solid ${mode === "strikes" ? "#e53e5a" : "#e2e8f0"}`, background: mode === "strikes" ? "#e53e5a" : "#ffffff", color: mode === "strikes" ? "#fff" : "#94aabf", boxShadow: mode === "strikes" ? "0 3px 12px rgba(229,62,90,0.25)" : "none" }}>
+            🚨 Travel Strikes
+          </button>
+          <button onClick={() => setMode("contracts")} style={{ display: "flex", alignItems: "center", gap: 8, padding: "11px 28px", borderRadius: 10, fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: `2px solid ${mode === "contracts" ? "#0077aa" : "#e2e8f0"}`, background: mode === "contracts" ? "#0077aa" : "#ffffff", color: mode === "contracts" ? "#fff" : "#94aabf", boxShadow: mode === "contracts" ? "0 3px 12px rgba(0,119,170,0.25)" : "none" }}>
+            💼 Travel Contracts
+          </button>
+        </div>
+
+        {/* TRAVEL CONTRACTS MODE */}
+        {mode === "contracts" && <TravelContractsPage />}
+
+        {/* STRIKES MODE */}
+        {mode === "strikes" && (<>
 
         {/* HEADER */}
         <header style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "0 24px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
