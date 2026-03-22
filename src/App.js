@@ -61,7 +61,7 @@ const globalStyles = `
   }
 `;
 
-// Ã¢ÂÂÃ¢ÂÂ DATA Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ DATA ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 const STRIKES = [
   {
@@ -83,7 +83,7 @@ const STRIKES = [
     union: "Brattleboro Federation of Nurses",
     nurses: 160, hospitals: 1,
     status: "VOTE PENDING", risk: "MEDIUM-HIGH",
-    date: "Results: Mar 23 Ã¢ÂÂ Strike ~Apr 2",
+    date: "Results: Mar 23 ÃÂ¢ÃÂÃÂ Strike ~Apr 2",
     issues: ["3-year wage freeze proposed", "Benefit cuts", "$14.5M deficit"],
     notes: "80%+ signed strike cards. Vote reveal Monday. If YES, 10-day notice drops next week.",
     updated: "Mar 21, 2026", color: "orange",
@@ -95,7 +95,7 @@ const STRIKES = [
     union: "Teamsters Local 332",
     nurses: 400, hospitals: 1,
     status: "ACTIVE STRIKE", risk: "ACTIVE",
-    date: "~Day 200 Ã¢ÂÂ ongoing",
+    date: "~Day 200 ÃÂ¢ÃÂÃÂ ongoing",
     issues: ["Wages", "Staffing ratios"],
     notes: "Joint statement signals 'optimism' but no TA yet. Crisis slots tapering.",
     updated: "Mar 21, 2026", color: "yellow",
@@ -143,32 +143,32 @@ const CONTRACTS = [
     id: 1,
     title: "Crisis ICU / L&D RN",
     location: "Southeast Michigan",
-    pay_hr: "$80Ã¢ÂÂ130/hr", pay_wk: "$4,800Ã¢ÂÂ7,800/wk (est.)",
+    pay_hr: "$80ÃÂ¢ÃÂÃÂ130/hr", pay_wk: "$4,800ÃÂ¢ÃÂÃÂ7,800/wk (est.)",
     type: "STRIKE", specialty: ["ICU", "L&D", "ER"],
-    start: "Imminent Ã¢ÂÂ Corewell",
-    agency: "Fastaff ÃÂ· Aya ÃÂ· USNursing",
+    start: "Imminent ÃÂ¢ÃÂÃÂ Corewell",
+    agency: "Fastaff ÃÂÃÂ· Aya ÃÂÃÂ· USNursing",
     hot: true,
     note: "Pre-position NOW before 10-day notice drops and slots vanish",
   },
   {
     id: 2,
-    title: "Strike RN Ã¢ÂÂ All Specialties",
+    title: "Strike RN ÃÂ¢ÃÂÃÂ All Specialties",
     location: "Grand Blanc, MI",
-    pay_hr: "$90Ã¢ÂÂ120/hr", pay_wk: "$5,400Ã¢ÂÂ7,200/wk",
+    pay_hr: "$90ÃÂ¢ÃÂÃÂ120/hr", pay_wk: "$5,400ÃÂ¢ÃÂÃÂ7,200/wk",
     type: "STRIKE", specialty: ["Med-Surg", "ICU", "ER"],
     start: "Active now",
-    agency: "USNursing ÃÂ· Cross Country",
+    agency: "USNursing ÃÂÃÂ· Cross Country",
     hot: false,
-    note: "Henry Ford Genesys ~Day 200. Volume tapering Ã¢ÂÂ act fast",
+    note: "Henry Ford Genesys ~Day 200. Volume tapering ÃÂ¢ÃÂÃÂ act fast",
   },
   {
     id: 3,
-    title: "Crisis RN Ã¢ÂÂ Behavioral Health",
+    title: "Crisis RN ÃÂ¢ÃÂÃÂ Behavioral Health",
     location: "Northern California",
-    pay_hr: "$95Ã¢ÂÂ115/hr", pay_wk: "$5,700Ã¢ÂÂ6,900/wk",
+    pay_hr: "$95ÃÂ¢ÃÂÃÂ115/hr", pay_wk: "$5,700ÃÂ¢ÃÂÃÂ6,900/wk",
     type: "CRISIS", specialty: ["Psych", "Behavioral Health"],
     start: "Now",
-    agency: "Aya ÃÂ· Vivian ÃÂ· Fastaff",
+    agency: "Aya ÃÂÃÂ· Vivian ÃÂÃÂ· Fastaff",
     hot: false,
     note: "25% surge in psych contracts in 2026. NUHW dispute keeps demand elevated.",
   },
@@ -176,18 +176,18 @@ const CONTRACTS = [
     id: 4,
     title: "Rapid Response RN",
     location: "Brattleboro, VT",
-    pay_hr: "$70Ã¢ÂÂ95/hr", pay_wk: "$4,200Ã¢ÂÂ5,700/wk (est.)",
+    pay_hr: "$70ÃÂ¢ÃÂÃÂ95/hr", pay_wk: "$4,200ÃÂ¢ÃÂÃÂ5,700/wk (est.)",
     type: "PRE-POSITION", specialty: ["Med-Surg", "ER", "ICU"],
     start: "~Apr 2 if strike authorized",
-    agency: "Fastaff ÃÂ· White Glove",
+    agency: "Fastaff ÃÂÃÂ· White Glove",
     hot: true,
     note: "Small hospital (160 RNs). Fast fill. Register before Mar 23 vote results.",
   },
   {
     id: 5,
-    title: "Strike RN Ã¢ÂÂ NYC Benchmark (Closed)",
+    title: "Strike RN ÃÂ¢ÃÂÃÂ NYC Benchmark (Closed)",
     location: "New York City, NY",
-    pay_hr: "Up to $161/hr (peak)", pay_wk: "$10,500Ã¢ÂÂ$12,800/wk",
+    pay_hr: "Up to $161/hr (peak)", pay_wk: "$10,500ÃÂ¢ÃÂÃÂ$12,800/wk",
     type: "CLOSED", specialty: ["ICU", "L&D", "ER", "OR"],
     start: "Ended Feb 21, 2026",
     agency: "All major agencies",
@@ -197,14 +197,14 @@ const CONTRACTS = [
 ];
 
 const TICKER_ITEMS = [
-  "Ã°ÂÂÂ´ COREWELL HEALTH EAST MI Ã¢ÂÂ 10,000 RNs authorize strike Ã¢ÂÂ 10-day notice IMMINENT",
-  "Ã°ÂÂÂ  BRATTLEBORO MEMORIAL VT Ã¢ÂÂ Strike vote results due MON MAR 23",
-  "Ã¢ÂÂ KAISER UNAC/UHCP Ã¢ÂÂ Contracts RATIFIED Mar 20 Ã¢ÂÂ 31,000 workers return",
-  "Ã¢ÂÂ NYC NYSNA Ã¢ÂÂ Strike ended Feb 21 after 41 days Ã¢ÂÂ all contracts ratified",
-  "Ã°ÂÂÂ¡ HENRY FORD GENESYS MI Ã¢ÂÂ Day ~200 of strike Ã¢ÂÂ 'optimistic' joint statement",
-  "Ã°ÂÂÂµ NUHW KAISER MENTAL HEALTH CA Ã¢ÂÂ Active strike Ã¢ÂÂ 23K CNA sympathy Mar 18",
-  "Ã°ÂÂÂ 2026 BENCHMARK: Strike RNs earned up to $161/hr ÃÂ· $12,800/wk NYC window",
-  "Ã¢ÂÂ¡ MICHIGAN = #1 DEPLOYMENT ZONE Ã¢ÂÂ Corewell + Genesys dual flashpoint",
+  "ÃÂ°ÃÂÃÂÃÂ´ COREWELL HEALTH EAST MI ÃÂ¢ÃÂÃÂ 10,000 RNs authorize strike ÃÂ¢ÃÂÃÂ 10-day notice IMMINENT",
+  "ÃÂ°ÃÂÃÂÃÂ  BRATTLEBORO MEMORIAL VT ÃÂ¢ÃÂÃÂ Strike vote results due MON MAR 23",
+  "ÃÂ¢ÃÂÃÂ KAISER UNAC/UHCP ÃÂ¢ÃÂÃÂ Contracts RATIFIED Mar 20 ÃÂ¢ÃÂÃÂ 31,000 workers return",
+  "ÃÂ¢ÃÂÃÂ NYC NYSNA ÃÂ¢ÃÂÃÂ Strike ended Feb 21 after 41 days ÃÂ¢ÃÂÃÂ all contracts ratified",
+  "ÃÂ°ÃÂÃÂÃÂ¡ HENRY FORD GENESYS MI ÃÂ¢ÃÂÃÂ Day ~200 of strike ÃÂ¢ÃÂÃÂ 'optimistic' joint statement",
+  "ÃÂ°ÃÂÃÂÃÂµ NUHW KAISER MENTAL HEALTH CA ÃÂ¢ÃÂÃÂ Active strike ÃÂ¢ÃÂÃÂ 23K CNA sympathy Mar 18",
+  "ÃÂ°ÃÂÃÂÃÂ 2026 BENCHMARK: Strike RNs earned up to $161/hr ÃÂÃÂ· $12,800/wk NYC window",
+  "ÃÂ¢ÃÂÃÂ¡ MICHIGAN = #1 DEPLOYMENT ZONE ÃÂ¢ÃÂÃÂ Corewell + Genesys dual flashpoint",
 ];
 
 const OUTLOOK = [
@@ -217,14 +217,14 @@ const OUTLOOK = [
 ];
 
 const INSIGHTS = [
-  { icon: "Ã¢ÂÂ¡", title: "Michigan is the #1 Deployment Zone", body: "Corewell Health East (10K RNs, 9 hospitals) has a 90% strike authorization vote and no final offer. Henry Ford Genesys is 200 days in. Pre-position credentials with Fastaff, Aya, and USNursing immediately.", color: "var(--red)" },
-  { icon: "Ã°ÂÂÂ°", title: "2026 Crisis Pay Benchmarks Reset Upward", body: "NYC strike saw rates up to $161/hr and $12,800/week. Kaiser crisis hit $9K/week. These numbers anchor expectations for every future deployment.", color: "var(--green)" },
-  { icon: "Ã°ÂÂ§Â ", title: "Psych/Behavioral Health: Hidden High-Pay Niche", body: "25% surge in psych contract offers in 2026. The NUHW Kaiser mental health dispute signals sustained demand. If you hold a psych cert, this market is underserved and growing fast.", color: "var(--accent)" },
-  { icon: "Ã°ÂÂ¤Â", title: "AI Clauses Are Now Standard Bargaining Demands", body: "Every major 2026 contract now includes language blocking AI from replacing clinical judgment. This structural conflict will drive more disputes as hospital AI adoption accelerates.", color: "var(--yellow)" },
-  { icon: "Ã°ÂÂÂ", title: "First Contracts = Highest Escalation Risk", body: "Corewell and BMC South are first-contract disputes Ã¢ÂÂ historically the most contentious type. These escalate faster and resolve slower than renewals.", color: "var(--orange)" },
+  { icon: "ÃÂ¢ÃÂÃÂ¡", title: "Michigan is the #1 Deployment Zone", body: "Corewell Health East (10K RNs, 9 hospitals) has a 90% strike authorization vote and no final offer. Henry Ford Genesys is 200 days in. Pre-position credentials with Fastaff, Aya, and USNursing immediately.", color: "var(--red)" },
+  { icon: "ÃÂ°ÃÂÃÂÃÂ°", title: "2026 Crisis Pay Benchmarks Reset Upward", body: "NYC strike saw rates up to $161/hr and $12,800/week. Kaiser crisis hit $9K/week. These numbers anchor expectations for every future deployment.", color: "var(--green)" },
+  { icon: "ÃÂ°ÃÂÃÂ§ÃÂ ", title: "Psych/Behavioral Health: Hidden High-Pay Niche", body: "25% surge in psych contract offers in 2026. The NUHW Kaiser mental health dispute signals sustained demand. If you hold a psych cert, this market is underserved and growing fast.", color: "var(--accent)" },
+  { icon: "ÃÂ°ÃÂÃÂ¤ÃÂ", title: "AI Clauses Are Now Standard Bargaining Demands", body: "Every major 2026 contract now includes language blocking AI from replacing clinical judgment. This structural conflict will drive more disputes as hospital AI adoption accelerates.", color: "var(--yellow)" },
+  { icon: "ÃÂ°ÃÂÃÂÃÂ", title: "First Contracts = Highest Escalation Risk", body: "Corewell and BMC South are first-contract disputes ÃÂ¢ÃÂÃÂ historically the most contentious type. These escalate faster and resolve slower than renewals.", color: "var(--orange)" },
 ];
 
-// Ã¢ÂÂÃ¢ÂÂ TRAVEL CONTRACTS DATA Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ TRAVEL CONTRACTS DATA ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 const TRAVEL_CONTRACTS = [
   { id: 1, hospital: "Mayo Clinic", city: "Rochester", state: "MN", specialty: "ICU", shift: "Days/Nights", pay_hr: "$82/hr", pay_wk: "$4,920/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: true, notes: "Level 1 trauma center. CCRN preferred. Housing stipend included." },
@@ -247,7 +247,7 @@ const TRAVEL_CONTRACTS = [
 const ALL_SPECIALTIES = ["All Specialties", "ICU", "ER / ED", "L&D / OB", "OR / Surgical", "Med-Surg", "Psych / Behavioral Health", "NICU", "Telemetry", "Stepdown / PCU", "Home Health", "Interventional Radiology", "Cath Lab", "GI", "Radiology"];
 const ALL_STATES = ["All States", "CA", "FL", "GA", "IL", "MA", "MD", "MN", "NY", "OH", "OR", "TN", "TX", "WA"];
 
-// Ã¢ÂÂÃ¢ÂÂ PRICING DATA Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ PRICING DATA ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 const PLANS = [
   {
@@ -259,7 +259,7 @@ const PLANS = [
     features: [
       "Real-time strike notice alerts",
       "High-pay contract listings",
-      "2Ã¢ÂÂ4 week strike outlook",
+      "2ÃÂ¢ÃÂÃÂ4 week strike outlook",
       "Market intelligence reports",
       "Email alerts for new notices",
       "Mobile-friendly access",
@@ -288,7 +288,7 @@ const PLANS = [
   },
 ];
 
-// Ã¢ÂÂÃ¢ÂÂ COMPONENTS Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ COMPONENTS ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 function RiskBadge({ risk }) {
   const s = {
@@ -331,7 +331,7 @@ function StatusBadge({ status }) {
 }
 
 function Ticker() {
-  const full = [...TICKER_ITEMS, ...TICKER_ITEMS].join("     ÃÂ·     ");
+  const full = [...TICKER_ITEMS, ...TICKER_ITEMS].join("     ÃÂÃÂ·     ");
   return (
     <div style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", height: 36, display: "flex", alignItems: "center", overflow: "hidden" }}>
       <div style={{ background: "var(--red)", color: "#fff", padding: "0 14px", height: "100%", display: "flex", alignItems: "center", fontFamily: "var(--font-mono)", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, flexShrink: 0 }}>LIVE</div>
@@ -373,7 +373,7 @@ function StrikeCard({ s, idx, onClick, selected }) {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 10 }}>
         <div>
           <div style={{ fontFamily: "var(--font-sans)", fontSize: 17, fontWeight: 700, color: "var(--text)", marginBottom: 4 }}>{s.hospital}</div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text2)" }}>{s.city}, {s.state} ÃÂ· {s.union}</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 13, color: "var(--text2)" }}>{s.city}, {s.state} ÃÂÃÂ· {s.union}</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 5, flexShrink: 0 }}>
           <StatusBadge status={s.status} />
@@ -404,7 +404,7 @@ function ContractCard({ c, idx }) {
   const tc = typeColors[c.type] || typeColors["CLOSED"];
   return (
     <div style={{ background: "var(--panel)", border: `1px solid ${c.hot ? "var(--red)" : "var(--border)"}`, borderRadius: 6, padding: "16px 18px", animation: `fadeUp 0.45s ease both`, animationDelay: `${idx * 70}ms`, position: "relative", overflow: "hidden", opacity: c.type === "CLOSED" ? 0.55 : 1 }}>
-      {c.hot && <div style={{ position: "absolute", top: 0, right: 0, background: "var(--red)", color: "#fff", fontFamily: "var(--font-mono)", fontSize: 9, fontWeight: 700, letterSpacing: 1, padding: "3px 10px", borderBottomLeftRadius: 6 }}>Ã¢ÂÂ¡ ACT NOW</div>}
+      {c.hot && <div style={{ position: "absolute", top: 0, right: 0, background: "var(--red)", color: "#fff", fontFamily: "var(--font-mono)", fontSize: 9, fontWeight: 700, letterSpacing: 1, padding: "3px 10px", borderBottomLeftRadius: 6 }}>ÃÂ¢ÃÂÃÂ¡ ACT NOW</div>}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
         <div>
           <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 700, color: "var(--text)", marginBottom: 3 }}>{c.title}</div>
@@ -430,7 +430,7 @@ function ContractCard({ c, idx }) {
         <span style={{ color: "var(--muted)" }}>AGENCIES: </span>{c.agency}
       </div>
       <div style={{ background: c.hot ? "var(--red-dim)" : "rgba(255,255,255,0.03)", border: `1px solid ${c.hot ? "var(--red)44" : "var(--border)"}`, borderRadius: 4, padding: "7px 10px", fontFamily: "var(--font-mono)", fontSize: 10, color: c.hot ? "var(--red)" : "var(--text2)" }}>
-        Ã¢ÂÂ {c.note}
+        ÃÂ¢ÃÂÃÂ {c.note}
       </div>
     </div>
   );
@@ -457,7 +457,7 @@ function PricingPage() {
   const [billing, setBilling] = useState("monthly");
   return (
     <div style={{ maxWidth: 800, margin: "0 auto" }}>
-      <SectionHeader accent="var(--accent)">Ã°ÂÂÂ³ Plans & Pricing</SectionHeader>
+      <SectionHeader accent="var(--accent)">ÃÂ°ÃÂÃÂÃÂ³ Plans & Pricing</SectionHeader>
 
       {/* Value prop */}
       <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 8, padding: "20px 24px", marginBottom: 28, textAlign: "center" }}>
@@ -465,7 +465,7 @@ function PricingPage() {
           One deployment pays for <span style={{ color: "var(--green)" }}>3+ years</span> of StrikeIntel
         </div>
         <div style={{ fontFamily: "var(--font-sans)", fontSize: 14, color: "var(--text2)" }}>
-          Strike nurses earn $5,000Ã¢ÂÂ$12,800/week. At $14.99/mo, your subscription pays for itself in the first 30 minutes on assignment.
+          Strike nurses earn $5,000ÃÂ¢ÃÂÃÂ$12,800/week. At $14.99/mo, your subscription pays for itself in the first 30 minutes on assignment.
         </div>
       </div>
 
@@ -499,7 +499,7 @@ function PricingPage() {
               <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 24 }}>
                 {plan.features.map(f => (
                   <div key={f} style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-                    <span style={{ color: "var(--green)", fontFamily: "var(--font-mono)", fontSize: 12, flexShrink: 0, marginTop: 1 }}>Ã¢ÂÂ</span>
+                    <span style={{ color: "var(--green)", fontFamily: "var(--font-mono)", fontSize: 12, flexShrink: 0, marginTop: 1 }}>ÃÂ¢ÃÂÃÂ</span>
                     <span style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text2)" }}>{f}</span>
                   </div>
                 ))}
@@ -516,7 +516,7 @@ function PricingPage() {
       <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 8, padding: "20px 24px" }}>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1, marginBottom: 16 }}>FREQUENTLY ASKED</div>
         {[
-          { q: "How often is the data updated?", a: "Intel is scanned and refreshed every 6Ã¢ÂÂ12 hours, and on-demand when major notices drop." },
+          { q: "How often is the data updated?", a: "Intel is scanned and refreshed every 6ÃÂ¢ÃÂÃÂ12 hours, and on-demand when major notices drop." },
           { q: "Do I need to sign a contract?", a: "No. Monthly plans cancel anytime. Annual plans are billed once per year." },
           { q: "What specialties are covered?", a: "ICU, ER, L&D, OR, Med-Surg, Psych, and all acute care specialties are tracked." },
           { q: "How do I get alerts?", a: "Email alerts are included on all plans. SMS alerts are coming soon." },
@@ -526,13 +526,13 @@ function PricingPage() {
             <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--text2)", lineHeight: 1.6 }}>{a}</div>
           </div>
         ))}
-        <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>Payments powered by Stripe ÃÂ· SSL secured ÃÂ· Cancel anytime</div>
+        <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>Payments powered by Stripe ÃÂÃÂ· SSL secured ÃÂÃÂ· Cancel anytime</div>
       </div>
     </div>
   );
 }
 
-// Ã¢ÂÂÃ¢ÂÂ TRAVEL CONTRACTS PAGE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ TRAVEL CONTRACTS PAGE ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 function TravelContractsPage() {
   const [specialty, setSpecialty] = useState("All Specialties");
@@ -574,10 +574,10 @@ function TravelContractsPage() {
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div style={{ fontSize: 11, fontWeight: 600, color: D.muted, letterSpacing: 2, marginBottom: 6 }}>TRAVEL CONTRACTS</div>
           <div style={{ fontSize: 22, fontWeight: 800, color: D.text, marginBottom: 4 }}>
-            Ã°ÂÂÂ¥ Travel Nurse Contract Assignments
+            ÃÂ°ÃÂÃÂÃÂ¥ Travel Nurse Contract Assignments
           </div>
           <div style={{ fontSize: 13, color: D.text2 }}>
-            Latest travel nurse openings by state, specialty & hospital Ã¢ÂÂ updated daily
+            Latest travel nurse openings by state, specialty & hospital ÃÂ¢ÃÂÃÂ updated daily
           </div>
         </div>
       </div>
@@ -611,7 +611,7 @@ function TravelContractsPage() {
             <div key={c.id} style={{ background: D.surface, border: `1px solid ${c.hot ? D.accent : D.border}`, borderTop: `3px solid ${c.hot ? D.accent : D.border}`, borderRadius: 10, padding: "18px 20px", animation: `fadeUp 0.4s ease both`, animationDelay: `${i * 50}ms`, position: "relative", overflow: "hidden" }}>
               {c.hot && (
                 <div style={{ position: "absolute", top: 0, right: 0, background: D.accent, color: "#000", fontSize: 9, fontWeight: 800, letterSpacing: 1, padding: "3px 10px", borderBottomLeftRadius: 8 }}>
-                  Ã¢ÂÂ¡ HOT
+                  ÃÂ¢ÃÂÃÂ¡ HOT
                 </div>
               )}
               {/* Hospital */}
@@ -649,7 +649,7 @@ function TravelContractsPage() {
 
               {/* Apply button */}
               <button style={{ width: "100%", padding: "10px", background: c.hot ? D.accent : "transparent", border: `1px solid ${c.hot ? D.accent : D.border}`, color: c.hot ? "#000" : D.text, borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
-                {c.hot ? "Ã¢ÂÂ¡ Apply Now" : "View & Apply"}
+                {c.hot ? "ÃÂ¢ÃÂÃÂ¡ Apply Now" : "View & Apply"}
               </button>
             </div>
           ))}
@@ -657,7 +657,7 @@ function TravelContractsPage() {
 
         {filtered.length === 0 && (
           <div style={{ textAlign: "center", padding: "60px 20px", color: D.muted }}>
-            <div style={{ fontSize: 40, marginBottom: 12 }}>Ã°ÂÂÂ</div>
+            <div style={{ fontSize: 40, marginBottom: 12 }}>ÃÂ°ÃÂÃÂÃÂ</div>
             <div style={{ fontSize: 18, fontWeight: 600, color: D.text2, marginBottom: 6 }}>No contracts found</div>
             <div style={{ fontSize: 14 }}>Try adjusting your filters</div>
           </div>
@@ -667,7 +667,7 @@ function TravelContractsPage() {
   );
 }
 
-// Ã¢ÂÂÃ¢ÂÂ MAIN APP Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ
+// ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ MAIN APP ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ
 
 export default function App() {
   const [mode, setMode] = useState("strikes"); // "strikes" | "contracts"
@@ -687,9 +687,9 @@ export default function App() {
   const TABS = [
     { id: "strikes",   label: "Strike Notices",    count: STRIKES.length },
     { id: "contracts", label: "High-Pay Contracts", count: CONTRACTS.filter(c => c.type !== "CLOSED").length },
-    { id: "outlook",   label: "2Ã¢ÂÂ4 Wk Outlook",   count: null },
-    { id: "insights",  label: "Ã°ÂÂÂ° News",             count: null },
-    { id: "pricing",   label: "Ã°ÂÂÂ³ Pricing",        count: null },
+    { id: "outlook",   label: "2ÃÂ¢ÃÂÃÂ4 Wk Outlook",   count: null },
+    { id: "insights",  label: "ÃÂ°ÃÂÃÂÃÂ° News",             count: null },
+    { id: "pricing",   label: "ÃÂ°ÃÂÃÂÃÂ³ Pricing",        count: null },
   ];
 
   return (
@@ -700,11 +700,11 @@ export default function App() {
         {/* MODE TABS */}
         <div style={{ background: "#ffffff", borderBottom: "2px solid var(--border)", display: "flex" }}>
           <button onClick={() => setMode("strikes")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "strikes" ? "3px solid #e53e5a" : "3px solid transparent", background: mode === "strikes" ? "#fff5f7" : "#ffffff", color: mode === "strikes" ? "#e53e5a" : "#94aabf", marginBottom: -2 }}>
-            Ã°ÂÂÂ¨ Travel Strikes
+            ÃÂ°ÃÂÃÂÃÂ¨ Travel Strikes
           </button>
           <div style={{ width: 1, background: "var(--border)", margin: "8px 0" }} />
           <button onClick={() => setMode("contracts")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "contracts" ? "3px solid #0077aa" : "3px solid transparent", background: mode === "contracts" ? "#f0f8ff" : "#ffffff", color: mode === "contracts" ? "#0077aa" : "#94aabf", marginBottom: -2 }}>
-            Ã°ÂÂÂ¼ Travel Contracts
+            ÃÂ°ÃÂÃÂÃÂ¼ Travel Contracts
           </button>
         </div>
 
@@ -723,13 +723,21 @@ export default function App() {
               <div style={{ fontFamily: "var(--font-sans)", fontSize: 10, fontWeight: 500, color: "var(--muted)", letterSpacing: 2 }}>HEALTHCARE LABOR INTELLIGENCE</div>
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6, background: "#f4f7fb", borderRadius: 10, padding: "4px", border: "1px solid var(--border)" }}>
+            <button onClick={() => setMode("strikes")} style={{ display: "flex", alignItems: "center", gap: 7, padding: "8px 18px", borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", background: mode === "strikes" ? "#ffffff" : "transparent", color: mode === "strikes" ? "#e53e5a" : "#94aabf", boxShadow: mode === "strikes" ? "0 1px 4px rgba(0,0,0,0.1)" : "none" }}>
+              🚨 Travel Strikes
+            </button>
+            <button onClick={() => setMode("contracts")} style={{ display: "flex", alignItems: "center", gap: 7, padding: "8px 18px", borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", background: mode === "contracts" ? "#ffffff" : "transparent", color: mode === "contracts" ? "#0077aa" : "#94aabf", boxShadow: mode === "contracts" ? "0 1px 4px rgba(0,0,0,0.1)" : "none" }}>
+              💼 Travel Contracts
+            </button>
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 18, flexShrink: 0 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 6, fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--green)" }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--green)", display: "inline-block", animation: "pulse 1.8s infinite" }} />
               LIVE
             </div>
             <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>
-              {now.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} ÃÂ· {now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}
+              {now.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} ÃÂÃÂ· {now.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}
             </div>
             <button onClick={() => setTab("pricing")} style={{ background: "var(--accent)", color: "#fff", border: "none", borderRadius: 5, padding: "7px 14px", fontFamily: "var(--font-sans)", fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
               Subscribe
@@ -742,8 +750,8 @@ export default function App() {
         {/* STATS */}
         <div style={{ display: "flex", gap: 10, padding: "14px 24px", background: "var(--surface)", borderBottom: "1px solid var(--border)", overflowX: "auto" }}>
           <StatCard label="ACTIVE STRIKES" value="2" sub="Henry Ford + NUHW Kaiser" color="var(--green)" delay={0} />
-          <StatCard label="AUTHORIZED" value="2" sub="Corewell ÃÂ· BMC South" color="var(--red)" delay={60} />
-          <StatCard label="VOTES PENDING" value="1" sub="Brattleboro Ã¢ÂÂ Mar 23" color="var(--orange)" delay={120} />
+          <StatCard label="AUTHORIZED" value="2" sub="Corewell ÃÂÃÂ· BMC South" color="var(--red)" delay={60} />
+          <StatCard label="VOTES PENDING" value="1" sub="Brattleboro ÃÂ¢ÃÂÃÂ Mar 23" color="var(--orange)" delay={120} />
           <StatCard label="RNs AT RISK" value="12.7K+" sub="Corewell = 10,000 RNs" color="var(--yellow)" delay={180} />
           <StatCard label="TOP WEEKLY PAY" value="$12,800" sub="2026 NYC benchmark" color="var(--accent)" delay={240} />
         </div>
@@ -764,7 +772,7 @@ export default function App() {
           {tab === "strikes" && (
             <div>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18, flexWrap: "wrap", gap: 10 }}>
-                <SectionHeader accent="var(--red)">Ã°ÂÂÂ¨ Active Labor Disputes & Strike Notices</SectionHeader>
+                <SectionHeader accent="var(--red)">ÃÂ°ÃÂÃÂÃÂ¨ Active Labor Disputes & Strike Notices</SectionHeader>
                 <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
                   {["ALL", "ACTIVE STRIKE", "AUTHORIZED", "MEDIUM-HIGH", "MEDIUM"].map(f => (
                     <button key={f} onClick={() => setFilter(f)} style={{ background: filter === f ? "var(--accent)" : "#ffffff", border: `1px solid ${filter === f ? "var(--accent)" : "#d1d5db"}`, color: filter === f ? "#ffffff" : "#111827", borderRadius: 5, padding: "5px 11px", cursor: "pointer", fontFamily: "var(--font-sans)", fontSize: 11, fontWeight: filter === f ? 600 : 500, transition: "all 0.12s" }}>{f}</button>
@@ -775,16 +783,16 @@ export default function App() {
                 {filtered.map((s, i) => <StrikeCard key={s.id} s={s} idx={i} onClick={handleClick} selected={selected?.id === s.id} />)}
               </div>
               <div style={{ marginTop: 14, padding: "10px 14px", background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 6, fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>
-                Ã¢ÂÂ¸ Tap any card to expand ÃÂ· Sources: NNU, NYSNA, Teamsters, CNA, Nurse.org, local news
+                ÃÂ¢ÃÂÃÂ¸ Tap any card to expand ÃÂÃÂ· Sources: NNU, NYSNA, Teamsters, CNA, Nurse.org, local news
               </div>
             </div>
           )}
 
           {tab === "contracts" && (
             <div>
-              <SectionHeader accent="var(--green)">Ã°ÂÂÂ° High-Pay Strike & Crisis RN Contracts</SectionHeader>
+              <SectionHeader accent="var(--green)">ÃÂ°ÃÂÃÂÃÂ° High-Pay Strike & Crisis RN Contracts</SectionHeader>
               <div style={{ background: "var(--red-dim)", border: "1px solid rgba(255,77,109,0.3)", borderRadius: 6, padding: "10px 14px", marginBottom: 18, fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--red)", lineHeight: 1.6 }}>
-                Ã¢ÂÂ¡ ALERT: Corewell Health East (10K RNs, SE Michigan) Ã¢ÂÂ pre-position NOW before 10-day notice drops.
+                ÃÂ¢ÃÂÃÂ¡ ALERT: Corewell Health East (10K RNs, SE Michigan) ÃÂ¢ÃÂÃÂ pre-position NOW before 10-day notice drops.
               </div>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(330px, 1fr))", gap: 12 }}>
                 {CONTRACTS.map((c, i) => <ContractCard key={c.id} c={c} idx={i} />)}
@@ -802,7 +810,7 @@ export default function App() {
 
           {tab === "outlook" && (
             <div>
-              <SectionHeader accent="var(--yellow)">Ã°ÂÂÂ 2Ã¢ÂÂ4 Week Strike Probability Outlook</SectionHeader>
+              <SectionHeader accent="var(--yellow)">ÃÂ°ÃÂÃÂÃÂ 2ÃÂ¢ÃÂÃÂ4 Week Strike Probability Outlook</SectionHeader>
               <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 6, overflow: "hidden" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1.4fr 100px 1.5fr 100px", gap: 12, padding: "10px 16px", background: "var(--surface)", borderBottom: "1px solid var(--border)" }}>
                   {["LOCATION", "RISK LEVEL", "ESTIMATED TIMELINE", "PROBABILITY"].map(h => <div key={h} style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: "var(--muted)", letterSpacing: 1 }}>{h}</div>)}
@@ -810,16 +818,16 @@ export default function App() {
                 {OUTLOOK.map((o, i) => <OutlookRow key={o.location} o={o} idx={i} />)}
               </div>
               <div style={{ marginTop: 14, padding: "12px 16px", background: "var(--yellow-dim)", border: "1px solid rgba(255,214,10,0.25)", borderRadius: 6, fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--yellow)", lineHeight: 1.8 }}>
-                Ã¢ÂÂ  NEXT TRIGGERS: Brattleboro vote results Mon Mar 23 ÃÂ· Corewell 10-day notice (watch daily) ÃÂ· Henry Ford Genesys resolution TBD
+                ÃÂ¢ÃÂÃÂ  NEXT TRIGGERS: Brattleboro vote results Mon Mar 23 ÃÂÃÂ· Corewell 10-day notice (watch daily) ÃÂÃÂ· Henry Ford Genesys resolution TBD
               </div>
             </div>
           )}
 
           {tab === "insights" && (
             <div>
-              <SectionHeader accent="var(--accent)">Ã°ÂÂÂ° Latest Strike News</SectionHeader>
+              <SectionHeader accent="var(--accent)">ÃÂ°ÃÂÃÂÃÂ° Latest Strike News</SectionHeader>
               <div style={{ background: "var(--accent-dim)", border: "1px solid rgba(0,119,170,0.2)", borderRadius: 8, padding: "12px 16px", marginBottom: 18, fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--accent)" }}>
-                Ã°ÂÂÂ News is updated daily at 6 AM ET Ã¢ÂÂ sourced from union announcements, local news, and healthcare publications.
+                ÃÂ°ÃÂÃÂÃÂ News is updated daily at 6 AM ET ÃÂ¢ÃÂÃÂ sourced from union announcements, local news, and healthcare publications.
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {INSIGHTS.map((item, i) => (
@@ -846,8 +854,8 @@ export default function App() {
         </main>
 
         <footer style={{ background: "var(--surface)", borderTop: "1px solid var(--border)", padding: "10px 24px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 6 }}>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>StrikeIntel ÃÂ· Healthcare Labor Intelligence ÃÂ· Not legal or financial advice</div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>Scan cycle: 6Ã¢ÂÂ12hr ÃÂ· Powered by Claude AI</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>StrikeIntel ÃÂÃÂ· Healthcare Labor Intelligence ÃÂÃÂ· Not legal or financial advice</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)" }}>Scan cycle: 6ÃÂ¢ÃÂÃÂ12hr ÃÂÃÂ· Powered by Claude AI</div>
         </footer>
       </div>
     </>
