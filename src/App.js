@@ -697,17 +697,6 @@ export default function App() {
       <style>{globalStyles}</style>
       <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 
-        {/* MODE TABS */}
-        <div style={{ background: "#ffffff", borderBottom: "2px solid var(--border)", display: "flex" }}>
-          <button onClick={() => setMode("strikes")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "strikes" ? "3px solid #e53e5a" : "3px solid transparent", background: mode === "strikes" ? "#fff5f7" : "#ffffff", color: mode === "strikes" ? "#e53e5a" : "#94aabf", marginBottom: -2 }}>
-            Travel Strikes
-          </button>
-          <div style={{ width: 1, background: "var(--border)", margin: "8px 0" }} />
-          <button onClick={() => setMode("contracts")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "contracts" ? "3px solid #0077aa" : "3px solid transparent", background: mode === "contracts" ? "#f0f8ff" : "#ffffff", color: mode === "contracts" ? "#0077aa" : "#94aabf", marginBottom: -2 }}>
-            Travel Contracts
-          </button>
-        </div>
-
         {/* TRAVEL CONTRACTS MODE */}
         {mode === "contracts" && <TravelContractsPage />}
 
