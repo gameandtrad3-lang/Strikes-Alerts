@@ -530,12 +530,12 @@ export default function App() {
       <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 
         {/* HEADER */}
-        <header style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "0 24px", height: 56, display: "flex", alignItems: "center", justifyContent: "space-between", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+        <header style={{ background: "var(--surface)", borderBottom: "1px solid var(--border)", padding: "0 24px", height: 64, display: "flex", alignItems: "center", justifyContent: "space-between", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{ width: 34, height: 34, borderRadius: 6, background: "var(--accent)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, flexShrink: 0 }}>⚕</div>
+            <img src="/logo.png" alt="Strike Alerts" style={{ height: 52, width: "auto", objectFit: "contain", flexShrink: 0 }} />
             <div>
-              <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, fontWeight: 800, color: "var(--text)", letterSpacing: 0.5, lineHeight: 1 }}>Strikes<span style={{ color: "var(--accent)" }}>Alerts</span></div>
-              <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1.5 }}>HEALTHCARE LABOR INTELLIGENCE</div>
+              <div style={{ fontFamily: "var(--font-sans)", fontSize: 20, fontWeight: 800, color: "var(--text)", lineHeight: 1.1, letterSpacing: "-0.3px" }}>Strike Alerts</div>
+              <div style={{ fontFamily: "var(--font-sans)", fontSize: 10, fontWeight: 500, color: "var(--muted)", letterSpacing: 2 }}>HEALTHCARE LABOR INTELLIGENCE</div>
             </div>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
