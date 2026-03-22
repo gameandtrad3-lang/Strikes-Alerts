@@ -697,12 +697,13 @@ export default function App() {
       <style>{globalStyles}</style>
       <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 
-        {/* MODE SWITCHER */}
-        <div style={{ background: "#ffffff", padding: "12px 24px", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, borderBottom: "1px solid var(--border)", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
-          <button onClick={() => setMode("strikes")} style={{ display: "flex", alignItems: "center", gap: 8, padding: "11px 28px", borderRadius: 10, fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: `2px solid ${mode === "strikes" ? "#e53e5a" : "#e2e8f0"}`, background: mode === "strikes" ? "#e53e5a" : "#ffffff", color: mode === "strikes" ? "#fff" : "#94aabf", boxShadow: mode === "strikes" ? "0 3px 12px rgba(229,62,90,0.25)" : "none" }}>
+        {/* MODE TABS */}
+        <div style={{ background: "#ffffff", borderBottom: "2px solid var(--border)", display: "flex" }}>
+          <button onClick={() => setMode("strikes")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "strikes" ? "3px solid #e53e5a" : "3px solid transparent", background: mode === "strikes" ? "#fff5f7" : "#ffffff", color: mode === "strikes" ? "#e53e5a" : "#94aabf", marginBottom: -2 }}>
             🚨 Travel Strikes
           </button>
-          <button onClick={() => setMode("contracts")} style={{ display: "flex", alignItems: "center", gap: 8, padding: "11px 28px", borderRadius: 10, fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: `2px solid ${mode === "contracts" ? "#0077aa" : "#e2e8f0"}`, background: mode === "contracts" ? "#0077aa" : "#ffffff", color: mode === "contracts" ? "#fff" : "#94aabf", boxShadow: mode === "contracts" ? "0 3px 12px rgba(0,119,170,0.25)" : "none" }}>
+          <div style={{ width: 1, background: "var(--border)", margin: "8px 0" }} />
+          <button onClick={() => setMode("contracts")} style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", gap: 10, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", borderBottom: mode === "contracts" ? "3px solid #0077aa" : "3px solid transparent", background: mode === "contracts" ? "#f0f8ff" : "#ffffff", color: mode === "contracts" ? "#0077aa" : "#94aabf", marginBottom: -2 }}>
             💼 Travel Contracts
           </button>
         </div>
