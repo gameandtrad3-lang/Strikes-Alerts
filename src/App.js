@@ -557,7 +557,7 @@ export default function App() {
         {/* STATS */}
         <div style={{ display: "flex", gap: 10, padding: "14px 24px", background: "var(--surface)", borderBottom: "1px solid var(--border)", overflowX: "auto" }}>
           <StatCard label="ACTIVE STRIKES" value="2" sub="Henry Ford + NUHW Kaiser" color="var(--green)" delay={0} />
-          <StatCard label="AUTHORIZED" value="3" sub="Corewell · BMC South · OHSU" color="var(--red)" delay={60} />
+          <StatCard label="AUTHORIZED" value="2" sub="Corewell · BMC South" color="var(--red)" delay={60} />
           <StatCard label="VOTES PENDING" value="1" sub="Brattleboro — Mar 23" color="var(--orange)" delay={120} />
           <StatCard label="RNs AT RISK" value="12.7K+" sub="Corewell = 10,000 RNs" color="var(--yellow)" delay={180} />
           <StatCard label="TOP WEEKLY PAY" value="$12,800" sub="2026 NYC benchmark" color="var(--accent)" delay={240} />
