@@ -697,7 +697,18 @@ export default function App() {
       <style>{globalStyles}</style>
       <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
 
-        {/* TRAVEL CONTRACTS MODE */}
+        {/* TOP MODE TAB BAR */}
+        <div style={{ background: "#ffffff", borderBottom: "2px solid var(--border)", display: "flex" }}>
+          <button onClick={() => setMode("strikes")} style={{ flex: 1, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", border: "none", borderBottom: mode === "strikes" ? "3px solid #e53e5a" : "3px solid transparent", background: mode === "strikes" ? "#fff5f7" : "#ffffff", color: mode === "strikes" ? "#e53e5a" : "#94aabf", marginBottom: -2, transition: "all 0.15s" }}>
+            Travel Strikes
+          </button>
+          <div style={{ width: 1, background: "var(--border)", margin: "8px 0" }} />
+          <button onClick={() => setMode("contracts")} style={{ flex: 1, padding: "16px 24px", fontFamily: "var(--font-sans)", fontSize: 16, fontWeight: 700, cursor: "pointer", border: "none", borderBottom: mode === "contracts" ? "3px solid #0077aa" : "3px solid transparent", background: mode === "contracts" ? "#f0f8ff" : "#ffffff", color: mode === "contracts" ? "#0077aa" : "#94aabf", marginBottom: -2, transition: "all 0.15s" }}>
+            Travel Contracts
+          </button>
+        </div>
+
+                {/* TRAVEL CONTRACTS MODE */}
         {mode === "contracts" && <TravelContractsPage />}
 
         {/* STRIKES MODE */}
@@ -712,15 +723,7 @@ export default function App() {
               <div style={{ fontFamily: "var(--font-sans)", fontSize: 10, fontWeight: 500, color: "var(--muted)", letterSpacing: 2 }}>HEALTHCARE LABOR INTELLIGENCE</div>
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 6, background: "#f4f7fb", borderRadius: 10, padding: "4px", border: "1px solid var(--border)" }}>
-            <button onClick={() => setMode("strikes")} style={{ display: "flex", alignItems: "center", gap: 7, padding: "8px 18px", borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", background: mode === "strikes" ? "#ffffff" : "transparent", color: mode === "strikes" ? "#e53e5a" : "#94aabf", boxShadow: mode === "strikes" ? "0 1px 4px rgba(0,0,0,0.1)" : "none" }}>
-              Travel Strikes
-            </button>
-            <button onClick={() => setMode("contracts")} style={{ display: "flex", alignItems: "center", gap: 7, padding: "8px 18px", borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 14, fontWeight: 700, cursor: "pointer", transition: "all 0.15s", border: "none", background: mode === "contracts" ? "#ffffff" : "transparent", color: mode === "contracts" ? "#0077aa" : "#94aabf", boxShadow: mode === "contracts" ? "0 1px 4px rgba(0,0,0,0.1)" : "none" }}>
-              Travel Contracts
-            </button>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 18, flexShrink: 0 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 6, fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--green)" }}>
               <span style={{ width: 6, height: 6, borderRadius: "50%", background: "var(--green)", display: "inline-block", animation: "pulse 1.8s infinite" }} />
               LIVE
