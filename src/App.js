@@ -648,8 +648,9 @@ function TravelContractsPage() {
               <div style={{ fontSize: 12, color: D.text2, lineHeight: 1.6, marginBottom: 14, padding: "8px 10px", background: D.panel, borderRadius: 6 }}>{c.notes}</div>
 
               {/* Apply button */}
-              <button style={{ width: "100%", padding: "10px", background: c.hot ? D.accent : "transparent", border: `1px solid ${c.hot ? D.accent : D.border}`, color: c.hot ? "#000" : D.text, borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, cursor: "pointer" }}>
-                {c.hot ? " Apply Now" : "View & Apply"}
+              <button style={{ width: "100%", padding: "10px", background: c.hot ? D.accent : "transparent", border: `1px solid ${c.hot ? D.accent : D.border}`, color: c.hot ? "#000" : D.text, borderRadius: 8, fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, cursor: "pointer" }}
+                onClick={() => window.open(c.url, '_blank')}>
+                {c.hot ? "Apply Now" : "View & Apply"}
               </button>
             </div>
           ))}
