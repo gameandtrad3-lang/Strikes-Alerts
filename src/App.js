@@ -525,7 +525,7 @@ export default function App() {
     { id: "strikes",   label: "Strike Notices",    count: STRIKES.length },
     { id: "contracts", label: "High-Pay Contracts", count: CONTRACTS.filter(c => c.type !== "CLOSED").length },
     { id: "outlook",   label: "2–4 Wk Outlook",   count: null },
-    { id: "insights",  label: "Market Intel",      count: null },
+    { id: "insights",  label: "📰 News",             count: null },
     { id: "pricing",   label: "💳 Pricing",        count: null },
   ];
 
@@ -637,27 +637,26 @@ export default function App() {
 
           {tab === "insights" && (
             <div>
-              <SectionHeader accent="var(--accent)">⚡ Market Intelligence & Trend Analysis</SectionHeader>
-              <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 20 }}>
+              <SectionHeader accent="var(--accent)">📰 Latest Strike News</SectionHeader>
+              <div style={{ background: "var(--accent-dim)", border: "1px solid rgba(0,119,170,0.2)", borderRadius: 8, padding: "12px 16px", marginBottom: 18, fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--accent)" }}>
+                🔄 News is updated daily at 6 AM ET — sourced from union announcements, local news, and healthcare publications.
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {INSIGHTS.map((item, i) => (
-                  <div key={i} style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 6, padding: "16px 18px", display: "flex", gap: 14, alignItems: "flex-start", animation: `fadeUp 0.45s ease both`, animationDelay: `${i * 70}ms` }}>
-                    <div style={{ fontSize: 22, flexShrink: 0, lineHeight: 1.2 }}>{item.icon}</div>
-                    <div>
-                      <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, fontWeight: 700, color: item.color, marginBottom: 6 }}>{item.title}</div>
-                      <div style={{ fontFamily: "var(--font-sans)", fontSize: 12, color: "var(--text2)", lineHeight: 1.7 }}>{item.body}</div>
+                  <div key={i} style={{ background: "var(--surface)", border: "1px solid var(--border)", borderLeft: `4px solid ${item.color}`, borderRadius: 8, padding: "16px 18px", display: "flex", gap: 14, alignItems: "flex-start", animation: `fadeUp 0.45s ease both`, animationDelay: `${i * 70}ms`, cursor: "pointer", transition: "box-shadow 0.15s" }}
+                    onMouseEnter={e => e.currentTarget.style.boxShadow = "0 2px 12px rgba(0,0,0,0.08)"}
+                    onMouseLeave={e => e.currentTarget.style.boxShadow = "none"}>
+                    <div style={{ fontSize: 24, flexShrink: 0, lineHeight: 1.2 }}>{item.icon}</div>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontFamily: "var(--font-sans)", fontSize: 15, fontWeight: 700, color: "var(--text)", marginBottom: 6 }}>{item.title}</div>
+                      <div style={{ fontFamily: "var(--font-sans)", fontSize: 13, color: "var(--text2)", lineHeight: 1.7, marginBottom: 10 }}>{item.body}</div>
+                      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                        <span style={{ background: "var(--panel2)", color: item.color, border: `1px solid ${item.color}33`, borderRadius: 20, padding: "2px 10px", fontFamily: "var(--font-sans)", fontSize: 11, fontWeight: 600 }}>Strike News</span>
+                        <span style={{ fontFamily: "var(--font-sans)", fontSize: 11, color: "var(--muted)" }}>Updated daily</span>
+                      </div>
                     </div>
                   </div>
                 ))}
-              </div>
-              <div style={{ background: "var(--panel)", border: "1px solid var(--border)", borderRadius: 6, padding: "16px 18px" }}>
-                <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--muted)", letterSpacing: 1, marginBottom: 12 }}>📡 DATA SOURCES MONITORED</div>
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: 8 }}>
-                  {["National Nurses United (NNU)", "NY State Nurses Assoc. (NYSNA)", "SEIU Healthcare", "UNAC/UHCP", "Teamsters Healthcare", "California Nurses Association", "AFT Healthcare", "Becker's Hospital Review", "Modern Healthcare", "Healthcare Dive", "Nurse.org Strike Tracker", "USNursing.com", "Fastaff / Aya / Cross Country", "Local news feeds"].map(src => (
-                    <div key={src} style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text2)", display: "flex", alignItems: "center", gap: 6 }}>
-                      <span style={{ color: "var(--accent)", flexShrink: 0 }}>›</span> {src}
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           )}
