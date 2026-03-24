@@ -143,7 +143,7 @@ const CONTRACTS = [
     id: 1,
     title: "Crisis ICU / L&D RN",
     location: "Southeast Michigan",
-    pay_hr: "$80130/hr", pay_wk: "$4,8007,800/wk (est.)",
+    pay_hr: "$100 to $140/hr", pay_wk: "$6,000 to $8,400/wk",
     type: "STRIKE", specialty: ["ICU", "L&D", "ER"],
     start: "Imminent  Corewell",
     agency: "Fastaff  Aya  USNursing",
@@ -154,7 +154,7 @@ const CONTRACTS = [
     id: 2,
     title: "Strike RN  All Specialties",
     location: "Grand Blanc, MI",
-    pay_hr: "$90120/hr", pay_wk: "$5,4007,200/wk",
+    pay_hr: "$100 to $140/hr", pay_wk: "$6,000 to $8,400/wk",
     type: "STRIKE", specialty: ["Med-Surg", "ICU", "ER"],
     start: "Active now",
     agency: "USNursing  Cross Country",
@@ -165,7 +165,7 @@ const CONTRACTS = [
     id: 3,
     title: "Crisis RN  Behavioral Health",
     location: "Northern California",
-    pay_hr: "$95115/hr", pay_wk: "$5,7006,900/wk",
+    pay_hr: "$95 to $120/hr", pay_wk: "$5,700 to $7,200/wk",
     type: "CRISIS", specialty: ["Psych", "Behavioral Health"],
     start: "Now",
     agency: "Aya  Vivian  Fastaff",
@@ -176,7 +176,7 @@ const CONTRACTS = [
     id: 4,
     title: "Rapid Response RN",
     location: "Brattleboro, VT",
-    pay_hr: "$7095/hr", pay_wk: "$4,2005,700/wk (est.)",
+    pay_hr: "$90 to $110/hr", pay_wk: "$5,400 to $6,600/wk",
     type: "PRE-POSITION", specialty: ["Med-Surg", "ER", "ICU"],
     start: "~Apr 2 if strike authorized",
     agency: "Fastaff  White Glove",
@@ -187,7 +187,7 @@ const CONTRACTS = [
     id: 5,
     title: "Strike RN NYC Benchmark (Closed)",
     location: "New York City, NY",
-    pay_hr: "Up to $161/hr (peak)", pay_wk: "$10,500$12,800/wk",
+    pay_hr: "Up to $161/hr (peak)", pay_wk: "$10,500 to $12,800/wk",
     type: "CLOSED", specialty: ["ICU", "L&D", "ER", "OR"],
     start: "Ended Feb 21, 2026",
     agency: "All major agencies",
@@ -228,7 +228,7 @@ const INSIGHTS = [
 
 const TRAVEL_CONTRACTS = [
   { id: 1, hospital: "Mayo Clinic", city: "Rochester", state: "MN", specialty: "ICU", shift: "Days/Nights", pay_hr: "$82/hr", pay_wk: "$4,920/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: true, notes: "Level 1 trauma center. CCRN preferred. Housing stipend included.", url: "https://www.ayahealthcare.com/travel-nursing-jobs/search/?specialtyIds=1&stateIds=23" },
-  { id: 2, hospital: "Cedars-Sinai Medical Center", city: "Los Angeles", state: "CA", specialty: "OR / Surgical", shift: "Days", pay_hr: "$95/hr", pay_wk: "$5,700/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "Fastaff", hot: true, notes: "High-volume surgical center. CNOR preferred. Immediate interviews.", url: "https://www.fastaff.com/travel-nursing-jobs?state=CA&specialty=OR" },
+  { id: 2, hospital: "Cedars-Sinai Medical Center", city: "Los Angeles", state: "CA", specialty: "OR / Surgical", shift: "Days", pay_hr: "$95 to $120/hr", pay_wk: "$5,700 to $7,200/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "Fastaff", hot: true, notes: "High-volume surgical center. CNOR preferred. Immediate interviews.", url: "https://www.fastaff.com/travel-nursing-jobs?state=CA&specialty=OR" },
   { id: 3, hospital: "Johns Hopkins Hospital", city: "Baltimore", state: "MD", specialty: "ER / ED", shift: "Nights", pay_hr: "$88/hr", pay_wk: "$5,280/wk", start: "Apr 21, 2026", duration: "13 weeks", agency: "Cross Country Nurses", hot: false, notes: "Trauma I center. Minimum 2 years ER experience required.", url: "https://www.crosscountry.com/travel-nursing/jobs?state=MD&specialty=ER" },
   { id: 4, hospital: "UCSF Medical Center", city: "San Francisco", state: "CA", specialty: "L&D / OB", shift: "Nights", pay_hr: "$91/hr", pay_wk: "$5,460/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Vivian Health", hot: true, notes: "High-risk OB unit. Fetal monitoring cert required.", url: "https://www.vivian.com/nurses/jobs/?specialty=ld&state=CA" },
   { id: 5, hospital: "Cleveland Clinic", city: "Cleveland", state: "OH", specialty: "Cath Lab", shift: "Days", pay_hr: "$98/hr", pay_wk: "$5,880/wk", start: "May 5, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: false, notes: "One of top cardiac centers in the US. RCIS preferred.", url: "https://www.ayahealthcare.com/travel-nursing-jobs/search/?specialtyIds=8&stateIds=36" },
@@ -241,7 +241,7 @@ const TRAVEL_CONTRACTS = [
   { id: 12, hospital: "Emory University Hospital", city: "Atlanta", state: "GA", specialty: "GI", shift: "Days", pay_hr: "$78/hr", pay_wk: "$4,680/wk", start: "Apr 14, 2026", duration: "13 weeks", agency: "USNursing", hot: false, notes: "High-volume GI lab. Endoscopy experience required.", url: "https://www.usnursing.com/travel-nursing-jobs?state=GA&specialty=GI" },
   { id: 13, hospital: "Stanford Health Care", city: "Palo Alto", state: "CA", specialty: "Radiology", shift: "Days", pay_hr: "$89/hr", pay_wk: "$5,340/wk", start: "Apr 28, 2026", duration: "13 weeks", agency: "Fastaff", hot: false, notes: "Leading research hospital. ARRT required.", url: "https://www.fastaff.com/travel-nursing-jobs?state=CA&specialty=radiology" },
   { id: 14, hospital: "Northwestern Memorial", city: "Chicago", state: "IL", specialty: "ICU", shift: "Nights", pay_hr: "$85/hr", pay_wk: "$5,100/wk", start: "Apr 7, 2026", duration: "13 weeks", agency: "Aya Healthcare", hot: false, notes: "Magnet designation. CCRN preferred. 2yr ICU min.", url: "https://www.ayahealthcare.com/travel-nursing-jobs/search/?specialtyIds=1&stateIds=14" },
-  { id: 15, hospital: "OHSU Hospital", city: "Portland", state: "OR", specialty: "ER / ED", shift: "Days/Nights", pay_hr: "$90/hr", pay_wk: "$5,400/wk", start: "May 5, 2026", duration: "13 weeks", agency: "White Glove", hot: true, notes: "Level 1 trauma center. Active union contract ongoing.", url: "https://www.whiteglovecare.net/travel-nursing/jobs?state=OR&specialty=ER" },
+  { id: 15, hospital: "OHSU Hospital", city: "Portland", state: "OR", specialty: "ER / ED", shift: "Days/Nights", pay_hr: "$100 to $140/hr", pay_wk: "$5,400/wk", start: "May 5, 2026", duration: "13 weeks", agency: "White Glove", hot: true, notes: "Level 1 trauma center. Active union contract ongoing.", url: "https://www.whiteglovecare.net/travel-nursing/jobs?state=OR&specialty=ER" },
 ];
 
 const ALL_SPECIALTIES = ["All Specialties", "ICU", "ER / ED", "L&D / OB", "OR / Surgical", "Med-Surg", "Psych / Behavioral Health", "NICU", "Telemetry", "Stepdown / PCU", "Home Health", "Interventional Radiology", "Cath Lab", "GI", "Radiology"];
